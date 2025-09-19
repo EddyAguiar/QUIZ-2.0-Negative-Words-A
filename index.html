@@ -90,27 +90,27 @@
   <script>
     const questions = [
       // --- originais ---
-      {q:"They ___ agree. (NOT)",a:"do not",options:["do not","does not","not"],reason:"Usamos NOT com auxiliares: 'They do not agree.'",sentence:"They do not agree."},
-      {q:"I ___ like sushi. (DON'T)",a:"don't",options:["don't","doesn't","not"],reason:"No presente simples, usamos don't para I/you/we/they.",sentence:"I don't like sushi."},
-      {q:"She ___ work here. (DOESN'T)",a:"doesn't",options:["doesn't","don't","didn't"],reason:"3ª pessoa singular: 'She doesn't work here.'",sentence:"She doesn't work here."},
-      {q:"We ___ go yesterday. (DIDN'T)",a:"didn't",options:["didn't","don't","wasn't"],reason:"No passado simples usamos didn't + verbo base.",sentence:"We didn't go yesterday."},
-      {q:"I ___ swim. (CAN'T)",a:"can't",options:["can't","won't","not"],reason:"Can't = não posso / não sei.",sentence:"I can't swim."},
-      {q:"It ___ rain tomorrow. (WON'T)",a:"won't",options:["won't","can't","isn't"],reason:"Won't = will not (futuro negativo).",sentence:"It won't rain tomorrow."},
-      {q:"I ___ eaten yet. (HAVEN'T)",a:"haven't",options:["haven't","hasn't","didn't"],reason:"Haven't = present perfect negativo (I/you/we/they).",sentence:"I haven't eaten yet."},
-      {q:"You ___ smoke. (SHOULDN'T)",a:"shouldn't",options:["shouldn't","mustn't","can't"],reason:"Shouldn't = conselho negativo.",sentence:"You shouldn't smoke."},
-      {q:"They ___ ready. (AREN'T)",a:"aren't",options:["aren't","isn't","don't"],reason:"Aren't = forma negativa de are (plural).",sentence:"They aren't ready."},
-      {q:"He ___ here. (ISN'T)",a:"isn't",options:["isn't","aren't","doesn't"],reason:"Isn't = forma negativa de is (singular).",sentence:"He isn't here."},
+      {q:"They ___ agree.",a:"do not",options:["do not","does not","not"],reason:"Usamos NOT com auxiliares: 'They do not agree.'",sentence:"They do not agree."},
+      {q:"I ___ like sushi.",a:"don't",options:["don't","doesn't","not"],reason:"No presente simples, usamos don't para I/you/we/they.",sentence:"I don't like sushi."},
+      {q:"She ___ work here.",a:"doesn't",options:["doesn't","don't","didn't"],reason:"3ª pessoa singular: 'She doesn't work here.'",sentence:"She doesn't work here."},
+      {q:"We ___ go yesterday.",a:"didn't",options:["didn't","don't","wasn't"],reason:"No passado simples usamos didn't + verbo base.",sentence:"We didn't go yesterday."},
+      {q:"I ___ swim.",a:"can't",options:["can't","won't","not"],reason:"Can't = não posso / não sei.",sentence:"I can't swim."},
+      {q:"It ___ rain tomorrow.",a:"won't",options:["won't","can't","isn't"],reason:"Won't = will not (futuro negativo).",sentence:"It won't rain tomorrow."},
+      {q:"I ___ eaten yet.",a:"haven't",options:["haven't","hasn't","didn't"],reason:"Haven't = present perfect negativo (I/you/we/they).",sentence:"I haven't eaten yet."},
+      {q:"You ___ smoke.",a:"shouldn't",options:["shouldn't","mustn't","can't"],reason:"Shouldn't = conselho negativo.",sentence:"You shouldn't smoke."},
+      {q:"They ___ ready.",a:"aren't",options:["aren't","isn't","don't"],reason:"Aren't = forma negativa de are (plural).",sentence:"They aren't ready."},
+      {q:"He ___ here.",a:"isn't",options:["isn't","aren't","doesn't"],reason:"Isn't = forma negativa de is (singular).",sentence:"He isn't here."},
       // --- novas ---
-      {q:"We ___ watching TV now. (AREN'T)",a:"aren't",options:["aren't","isn't","don't"],reason:"Usamos aren't no presente contínuo com 'we'.",sentence:"We aren't watching TV now."},
-      {q:"She ___ finished her homework yet. (HAS NOT)",a:"hasn't",options:["hasn't","haven't","didn't"],reason:"Present perfect negativo para 'she': hasn't.",sentence:"She hasn't finished her homework yet."},
-      {q:"I ___ believe that story. (CANNOT)",a:"cannot",options:["cannot","don't","didn't"],reason:"Cannot = forma mais formal de can't.",sentence:"I cannot believe that story."},
-      {q:"You ___ park here. (MUSTN'T)",a:"mustn't",options:["mustn't","shouldn't","can't"],reason:"Mustn't = proibição. Ex: You mustn't park here.",sentence:"You mustn't park here."},
-      {q:"He ___ going to travel this weekend. (ISN'T)",a:"isn't",options:["isn't","aren't","wasn't"],reason:"Negativa do be going to (he): isn't.",sentence:"He isn't going to travel this weekend."},
-      {q:"They ___ been to London before. (HAVEN'T)",a:"haven't",options:["haven't","hasn't","didn't"],reason:"Haven't = present perfect plural.",sentence:"They haven't been to London before."},
-      {q:"We ___ meet tomorrow. (WON'T)",a:"won't",options:["won't","don't","can't"],reason:"Won't = futuro negativo com will.",sentence:"We won't meet tomorrow."},
-      {q:"She ___ like horror movies. (DOESN'T)",a:"doesn't",options:["doesn't","don't","didn't"],reason:"3ª pessoa singular usa doesn't.",sentence:"She doesn't like horror movies."},
-      {q:"I ___ hungry right now. (AM NOT)",a:"am not",options:["am not","isn't","aren't"],reason:"Primeira pessoa singular: I am not.",sentence:"I am not hungry right now."},
-      {q:"The kids ___ sleeping. (AREN'T)",a:"aren't",options:["aren't","isn't","wasn't"],reason:"Plural: kids → aren't sleeping.",sentence:"The kids aren't sleeping."}
+      {q:"We ___ watching TV now.",a:"aren't",options:["aren't","isn't","don't"],reason:"Usamos aren't no presente contínuo com 'we'.",sentence:"We aren't watching TV now."},
+      {q:"She ___ finished her homework yet.",a:"hasn't",options:["hasn't","haven't","didn't"],reason:"Present perfect negativo para 'she': hasn't.",sentence:"She hasn't finished her homework yet."},
+      {q:"I ___ believe that story.",a:"cannot",options:["cannot","don't","didn't"],reason:"Cannot = forma mais formal de can't.",sentence:"I cannot believe that story."},
+      {q:"You ___ park here.",a:"mustn't",options:["mustn't","shouldn't","can't"],reason:"Mustn't = proibição. Ex: You mustn't park here.",sentence:"You mustn't park here."},
+      {q:"He ___ going to travel this weekend.",a:"isn't",options:["isn't","aren't","wasn't"],reason:"Negativa do be going to (he): isn't.",sentence:"He isn't going to travel this weekend."},
+      {q:"They ___ been to London before.",a:"haven't",options:["haven't","hasn't","didn't"],reason:"Haven't = present perfect plural.",sentence:"They haven't been to London before."},
+      {q:"We ___ meet tomorrow.",a:"won't",options:["won't","don't","can't"],reason:"Won't = futuro negativo com will.",sentence:"We won't meet tomorrow."},
+      {q:"She ___ like horror movies.",a:"doesn't",options:["doesn't","don't","didn't"],reason:"3ª pessoa singular usa doesn't.",sentence:"She doesn't like horror movies."},
+      {q:"I ___ hungry right now.",a:"am not",options:["am not","isn't","aren't"],reason:"Primeira pessoa singular: I am not.",sentence:"I am not hungry right now."},
+      {q:"The kids ___ sleeping.",a:"aren't",options:["aren't","isn't","wasn't"],reason:"Plural: kids → aren't sleeping.",sentence:"The kids aren't sleeping."}
     ];
 
     let currentIndex=0,score=0,userAnswers=[];
@@ -206,4 +206,5 @@
   </script>
 </body>
 </html>
+
 
